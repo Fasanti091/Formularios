@@ -15,7 +15,7 @@ def index(request):
             data = formulario.cleaned_data
             listado_productos = Producto.objects.filter(nombre__icontains = data["nombre_producto"])
         
-        return render(request, "productos/index.html", {"productos": listado_productos})
+        return render(request, "productos/index.html", {"productos": listado_productos, "formulario" : formulario})
 
     else:
         formulario = Busqueda()
