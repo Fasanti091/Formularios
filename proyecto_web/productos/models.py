@@ -1,3 +1,4 @@
+from itertools import pairwise
 from re import T
 from xmlrpc.client import TRANSPORT_ERROR
 from django.db import models
@@ -20,3 +21,9 @@ class Personas(models.Model):
     nombre = models.CharField(max_length=150)
     apellido = models.CharField(max_length=150)
     edad = models.IntegerField()
+
+class Ciudades(models.Model):
+
+    nombre = models.CharField(max_length=150)  
+    pais = models.CharField(max_length=150)
+    municipio = models.CharField(max_length=150) 

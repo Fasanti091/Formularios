@@ -1,7 +1,7 @@
-from  django.forms import Form, CharField
+from  django.forms import Form, CharField, IntegerField
 
 # Formulario de busqueda
 
 class Busqueda(Form):
-    nombre_producto = CharField(max_length=150)
+    buscar = CharField(max_length=150)
     

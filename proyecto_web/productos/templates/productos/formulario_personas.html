@@ -1,0 +1,16 @@
+{% extends 'productos/base_formularios.html' %}
+
+{% block crear_personas %}
+
+    <form method="post">{% csrf_token %}
+        <p>Nombre de la persona</p>
+        <input type="text" name="nombre">
+        <p>Ingrese el apellido</p>
+        <input type="text" name="apellido">
+        <p>Ingrese la edad</p>
+        <input type="number" name="edad">
+
+        <input type="submit" value="Crear">
+    </form>
+
+{% endblock crear_personas %}

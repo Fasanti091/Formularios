@@ -1,0 +1,16 @@
+{% extends 'productos/base_formularios.html' %}
+
+{% block crear_ciudades %}
+
+    <form method="post">{% csrf_token %}
+        <p>Nombre de la ciudad</p>
+        <input type="text" name="nombre">
+        <p>Ingrese el pais</p>
+        <input type="text" name="pais">
+        <p>Ingrese el Departamento</p>
+        <input type="text" name="municipio">
+
+        <input type="submit" value="Crear">
+    </form>
+
+{% endblock crear_ciudades %}

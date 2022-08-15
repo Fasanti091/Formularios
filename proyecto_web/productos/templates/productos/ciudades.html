@@ -1,19 +1,20 @@
 {% extends 'productos/base.html' %}
 
 {% block listado %}
-    {% for persona in personas %}
+    {% for ciudad in ciudades %}
     <div class="col mb-5">
         <div class="card h-100">
             <!-- Product image-->
-            <img class="card-img-top" src="https://garciafrailecom.files.wordpress.com/2020/10/bringing-the-buyer-to-life-01.png" alt="..." />
+            <img class="card-img-top" src="https://us.123rf.com/450wm/alexzel/alexzel1602/alexzel160200073/52726870-vista-superior-del-modelo-inconsútil-de-la-ciudad-de-calles-caminos-casas-y-automóviles.jpg?ver=6" alt="..." />
             <!-- Product details-->
             <div class="card-body p-4">
                 <div class="text-center">
                     <!-- Product name-->
-                    <h5 class="fw-bolder">{{persona.nombre}} {{persona.apellido}}</h5>
-                    <!-- Product price-->
+                    <h5 class="fw-bolder">{{ciudad.nombre}}</h5>
                     <hr>
-                    <p>edad {{persona.edad}} </p>
+                    <h6>{{ciudad.pais}}</h6>
+                    <!-- Product price-->
+                    <p>Departamento {{ciudad.municipio}} </p>
                 </div>
             </div>
             <!-- Product actions-->

@@ -37,38 +37,41 @@
                         </li>
                     </ul>
                     <div>
-                        <form class="d-flex">
-                            <form class="d-flex" role="search">
-                                {{ formulario.as_p }}
-                                <button class="btn btn-outline-success" type="submit" style="height: 30px;">Buscar</button>
-                            </form>
-                        </form>
                     </div>
                 </div>
             </div>
         </nav>
+        <br>
+        <br>
         <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Listados de la bases de datos</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Todos los productos, personas estan guardados en una base de datos y pueden ser agregador en la opcion de formularios</p>
-                </div>
-            </div>
-        </header>
+        <h1 style="text-align: center;">Creacion de datos</h1>
+        <h6 style="text-align: center;"> Para ver los datos creados ir a sus respectivos nombres en el menu de navegacion ...</h6>
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
+                <hr>
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     
-                    <!-- traer block de el index, personas, ciudades -->
-                    {% block listado %}
-                    {% endblock listado %}
-            
+                    <!-- traer block de el formulario_productos -->
+                    {% block crear_productos %}
+                    {% endblock crear_productos %}
+                    <!-- traer block de el formulario_personas -->
+                    {% block crear_personas %}
+                    {% endblock crear_personas %}
+                    <!-- traer block de el formulario_ciudades -->
+                    {% block crear_ciudades %}
+                    {% endblock crear_ciudades %}
+                     
                 </div>
+                <hr>
             </div>
         </section>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Andres Suarez 2022</p></div>
