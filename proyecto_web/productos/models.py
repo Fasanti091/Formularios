@@ -14,3 +14,9 @@ class Producto(models.Model):
 
     def __str__(self) -> str:
         return f"{self.nombre} - {self.marca}" # TODO
+
+class Personas(models.Model):
+
+    nombre = models.CharField(max_length=150)
+    apellido = models.CharField(max_length=150)
+    edad = models.IntegerField()
