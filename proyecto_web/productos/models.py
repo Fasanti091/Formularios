@@ -1,6 +1,3 @@
-from itertools import pairwise
-from re import T
-from xmlrpc.client import TRANSPORT_ERROR
 from django.db import models
 
 # Create your models here.
